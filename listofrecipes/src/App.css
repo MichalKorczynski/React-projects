@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+}
+
+body {
+  background-color: rgb(39, 39, 39);
+  color: white;
+}
+
+input {
+  width: 100% - 25px;
+  height: 49px;
+  padding-left: 25px;
+
+  border: solid #696969 1px;
+  background-color: rgb(39, 39, 39);
+
+  color: white;
+  font-size: 24px;
+}
+
+p {
+  font-size: 24px;
+  font-weight: 500;
+  
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.nav-buttons {
+  display: grid;
+  grid-template-columns: 1fr 0fr;
+  gap: 10px;
+
+  width: 50%;
+  margin: 0px auto 20px auto;
+
+  padding-top: 25px;
+}
+
+.search {
+  border: solid #696969 1px;
+  background-color: rgb(39, 39, 39);
+
+  color: white;
+  font-size: 24px;
+  
+
+  margin-bottom: 15px;
+  padding-left: 25px;
+
+  width: 97%;
+  height: 60px;
+}
+.search:focus {
+  border: 1px solid rgb(5, 70, 192);;
+  outline:none;
+}
+
+#add {
+  border: none;
+  background-color: rgb(5, 70, 192);
+
+  width: 50%;
+  height: 60px;
+
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+#add:hover {
+  background-color: rgb(31, 102, 235);
+}
+
+#favouriteOnly {
+  border: none;
+  background-color: rgb(131, 13, 13);
+
+  width: 50%;
+  height: 60px;
+
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+#favouriteOnly:hover {
+  background-color: rgb(165, 37, 37);
+}
+
+#recipeContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+
+  margin: 20px;
+}
+
+.recipe {
+  background-color: rgb(48, 47, 47);
+  border: solid #696969 1px;
+
+  height: 400px;
+  position: relative  ;
+}
+
+.ogranicznik{
+  width: 93%;
+}
+
+#form {
+  height: 70vh;
+  width: 40%;
+
+  background: rgb(39, 39, 39);
+  border: solid #696969 1px;
+
+  left: 30%;
+  display: none;
+}
+
+.title { 
+  margin-top: 50px;
+
+  width: 50%;
+  height: 50px;
+}
+.title:focus {
+  border: 1px solid rgb(5, 70, 192);;
+  outline:none;
+}
+
+.desc {
+  margin-top: 25px;
+
+  border: solid #696969 1px;
+  background-color: rgb(39, 39, 39);
+
+  color: white;
+  font-size: 24px;
+  padding:5px;
+
+  width: 52%;
+  height: 400px;
+}
+.desc:focus {
+  border: 1px solid rgb(5, 70, 192);;
+  outline:none;
+}
+
+.addRecipe {
+  margin-top: 20px;
+  margin-right: 15px;
+
+  width: 15%;
+  height: 50px;
+
+  border: none;
+  background-color: rgb(5, 70, 192);
+
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.addRecipe:hover {
+  background-color: rgb(31, 102, 235);
+}
+
+.exit {
+  margin-top: 20px;
+  margin-left: 15px;
+
+  width: 15%;
+  height: 50px;
+
+  border: none;
+  background-color: rgb(131, 13, 13);
+
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.exit:hover {
+  background-color: rgb(165, 37, 37);
+}
+
+
+
+#favToggle{
+  width: 40px;
+  height: 40px;
+
+  position: absolute;
+
+  right: 15px;
+  top: 15px;
+
+  background-color: rgb(48, 47, 47);
+
+  border: none;
+  border-radius: 50%;
+}
+
+#delButton{
+  width: 40px;
+  height: 40px;
+
+  position: absolute;
+
+  right: 15px;
+
+  background-color: rgb(48, 47, 47);
+
+  border: none;
+  border-radius: 50%;
+}
+
+#trash{
+  font-size: 30px;
+  color: red;
+}
+#star{
+  font-size: 30px;
+  color: yellow;
+}

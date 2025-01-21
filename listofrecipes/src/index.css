@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+}
+
+#form {
+  height: 80vh;
+  width: 80%;
+
+  background: aliceblue;
+  border-radius: 25px;
+
+  position: fixed;
+  top: 10%;
+  left: 10%;
+
+  z-index: 5;
+  display: none;
+}
