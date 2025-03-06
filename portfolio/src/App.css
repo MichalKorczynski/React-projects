@@ -1,0 +1,356 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1,
+h2 {
+  color: white;
+}
+
+p,
+h3 {
+  color: rgb(220, 219, 219);
+}
+
+body {
+  background-color: rgb(22, 30, 43);
+}
+
+
+/*about me*/
+.left-side {
+  margin: 7px;
+  padding: 7px;
+}
+
+.contact-links {
+  bottom: 20px;
+  left: 20px;
+  color: white;
+}
+
+.contact-links a {
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.contact-links a:hover {
+  text-decoration: underline;
+}
+
+/*main content*/
+.right-side {
+  margin: 7px;
+}
+
+/* projects*/
+.projects {
+  display: grid;
+  grid-template-columns: 80%;
+}
+
+/*p animation*/
+.project {
+  cursor: pointer;
+  display: flex;
+  perspective: 1000px;
+  margin: 10px;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+  transform: scale(1.02);
+}
+
+.card {
+  width: 100%;
+  height: 150px;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.card.flipped {
+  transform: rotateY(180deg);
+
+}
+
+.front,
+.back {
+  position: absolute;
+  backface-visibility: hidden;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+
+.front {
+  background-color: rgb(22, 30, 43);
+  border-radius: 10px;
+}
+
+.back {
+  background-color: rgb(32, 44, 62);
+  border-radius: 10px;
+  transform: rotateY(180deg);
+}
+
+
+.front:hover {
+  background-color: rgb(47, 63, 90);
+}
+
+/*technologies*/
+.java {
+  display: inline;
+
+  padding: 3px;
+  margin-right: 10px;
+
+  border-radius: 10px;
+  background-color: rgba(219, 34, 2, 0.5);
+  color: red;
+}
+
+.swing {
+  display: inline;
+
+  padding: 3px;
+  margin-right: 10px;
+
+  border-radius: 10px;
+  background-color: rgba(11, 95, 78, 0.5);
+  color: rgb(0, 255, 115);
+}
+
+.css {
+  display: inline;
+
+  padding: 3px;
+  margin-right: 10px;
+
+  border-radius: 10px;
+  background-color: rgba(6, 62, 246, 0.5);
+  color: rgb(0, 208, 255);
+}
+
+.html {
+  display: inline;
+
+  padding: 3px;
+  margin-right: 10px;
+
+  border-radius: 10px;
+  background-color: rgba(255, 128, 0, 0.5);
+  color: orange;
+}
+
+.react {
+  display: inline;
+
+  padding: 3px;
+  margin-right: 10px;
+
+  border-radius: 10px;
+  background-color: rgba(149, 0, 255, 0.5);
+  color: rgb(255, 0, 238);
+}
+
+.cpp {
+  display: inline;
+
+  padding: 3px;
+  margin-right: 10px;
+
+  border-radius: 10px;
+  background-color: rgba(5, 81, 106, 0.5);
+  color: rgb(0, 191, 255);
+}
+
+@media (min-width: 900px) {
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+  }
+
+  body {
+    background-color: rgb(22, 30, 43);
+    overflow-y: hidden;
+  }
+
+
+
+  .container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+
+  }
+
+  /*about me*/
+  .left-side {
+    width: 50%;
+    height: 100vh;
+    margin: 7px;
+    padding: 7px;
+  }
+
+  .contact-links {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+  }
+
+  .contact-links a {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: white;
+  }
+
+  .contact-links a:hover {
+    text-decoration: underline;
+  }
+
+  /*main content*/
+  .right-side {
+    width: 50%;
+    height: 100vh;
+    margin: 7px;
+    overflow-y: auto;
+  }
+
+  /* projects*/
+  .projects {
+    display: grid;
+    grid-template-columns: 80%;
+  }
+
+  /*p animation*/
+  .project {
+    cursor: pointer;
+    display: flex;
+    perspective: 1000px;
+    margin: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .project:hover {
+    transform: scale(1.02);
+  }
+
+  .card {
+    width: 100%;
+    height: 150px;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+  }
+
+  .card.flipped {
+    transform: rotateY(180deg);
+
+  }
+
+  .front,
+  .back {
+    position: absolute;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+  }
+
+  .front {
+    background-color: rgb(22, 30, 43);
+    border-radius: 10px;
+  }
+
+  .back {
+    background-color: rgb(32, 44, 62);
+    border-radius: 10px;
+    transform: rotateY(180deg);
+  }
+
+
+  .front:hover {
+    background-color: rgb(32, 44, 62);
+  }
+
+  /*technologies*/
+  .java {
+    display: inline;
+
+    padding: 3px;
+    margin-right: 10px;
+
+    border-radius: 10px;
+    background-color: rgba(219, 34, 2, 0.5);
+    color: red;
+  }
+
+  .swing {
+    display: inline;
+
+    padding: 3px;
+    margin-right: 10px;
+
+    border-radius: 10px;
+    background-color: rgba(11, 95, 78, 0.5);
+    color: rgb(0, 255, 115);
+  }
+
+  .css {
+    display: inline;
+
+    padding: 3px;
+    margin-right: 10px;
+
+    border-radius: 10px;
+    background-color: rgba(6, 62, 246, 0.5);
+    color: rgb(0, 208, 255);
+  }
+
+  .html {
+    display: inline;
+
+    padding: 3px;
+    margin-right: 10px;
+
+    border-radius: 10px;
+    background-color: rgba(255, 128, 0, 0.5);
+    color: orange;
+  }
+
+  .react {
+    display: inline;
+
+    padding: 3px;
+    margin-right: 10px;
+
+    border-radius: 10px;
+    background-color: rgba(149, 0, 255, 0.5);
+    color: rgb(255, 0, 238);
+  }
+
+  .cpp {
+    display: inline;
+
+    padding: 3px;
+    margin-right: 10px;
+
+    border-radius: 10px;
+    background-color: rgba(5, 81, 106, 0.5);
+    color: rgb(0, 191, 255);
+  }
+}
